@@ -3,6 +3,7 @@ import bcrypt from "bcrypt";
 import { Admin } from "./models/Admin.js";
 import "./db.js";
 
+// Admin account
 async function AdminAccount() {
   try {
     const amdinCount = await Admin.countDocuments()
