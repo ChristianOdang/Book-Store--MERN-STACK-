@@ -5,6 +5,7 @@ import jwt from "jsonwebtoken";
 import bcrypt from "bcrypt";
 const router = express.Router();
 
+// login router
 router.post('/login', async (req, res) => {
   try {
     const { username, password, role } = req.body;
