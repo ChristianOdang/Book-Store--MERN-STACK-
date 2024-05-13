@@ -22,6 +22,7 @@ app.use('/auth', AdminRouter)
 app.use('/student', studentRouter)
 app.use('/book', bookRouter)
 
+// dashboard
 app.get('/dashboard', async (req, res) => {
   try {
     const student = await Student.countDocuments()
